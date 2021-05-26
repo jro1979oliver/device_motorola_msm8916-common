@@ -153,7 +153,9 @@ BOARD_ROOT_EXTRA_FOLDERS := firmware persist pds fsg
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/motorola/msm8916-common/sepolicy/private
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
