@@ -157,6 +157,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ifeq ($(filter surnia,$(PRODUCT_DEVICE)),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/extract_firmware.sh:install/bin/extract_firmware.sh
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-legacymm \
+    vendor.lineage.livedisplay@2.0-service-sysfs
 endif
 
 # Encryption
