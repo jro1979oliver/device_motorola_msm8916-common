@@ -40,7 +40,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.cpurend.vsync=false \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-    ro.qualcomm.cabl=0
+    ro.qualcomm.cabl=0 \
+    persist.hwc.pubypass=true
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
